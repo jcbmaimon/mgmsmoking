@@ -17,7 +17,8 @@
 <style>
 *, *::before, *::after {box-sizing: border-box; margin: 0; padding: 0;}
 div {overflow:auto;}
-img {display:inline-block; float:left;} 
+img {display:inline-block; float:left;}
+a {all: unset; cursor: pointer;}
 @font-face {font-family: 'mgc'; src: url('images/magic.ttf') format('truetype');}
 
 body {margin:10px; padding:0px;}
@@ -31,6 +32,7 @@ div.Text {width:100%; text-align:justify;}
 .Crumbs.Na {cursor:none; opacity:0.4;}
 .Font-Magic {font-family: 'mgc', sans-serif;}
 img.Thumbs {border:1px solid #ffffff;}
+div.TopLogo {position:absolute; top:20px; right:20px; color:green; font-family: 'mgc', sans-serif; font-size:40px; padding:10px;}
 </style>
 
 <script>
@@ -69,7 +71,11 @@ mne.style.display="block";
 
 <div class="Container" id="eng" style="display:none;">
 
-<div class="Page">
+<div class="Page" style="position:relative;">
+
+<div class="TopLogo">
+<a href="javascript:goTo('contactEng')">MGM</a>
+</div>
 
 <span class="Crumbs Lng Off">ENG</span>
 |
@@ -436,7 +442,11 @@ I published this book on my 40th birthday, not forgetting the kid who started it
 
 <div class="Container" id="mne">
 
-<div class="Page">
+<div class="Page" style="position:relative;">
+
+<div class="TopLogo">
+<a href="javascript:goTo('contactMne')">MGM</a>
+</div>
 
 <span class="Crumbs Lng" onclick="showPage('eng')">ENG</span>
 |
